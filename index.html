@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat&display=swap" rel="stylesheet">
-
-    <title>a-Gnostics</title>
-
+    <title>dev_Smartificial Element</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -20,27 +17,30 @@
             <img class="header__logo__img" src="./assets/images/se_logo.png" alt="logo" />
         </a>
 
+        <a href="/" class="header__toggle_button">
+            <span class="test header__toggle_button__bar"></span>
+            <span class="test header__toggle_button__bar"></span>
+            <span class="test header__toggle_button__bar"></span>
+
+            <svg class="header__cross_button" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </a>
+        <a href="#" class="header__cross_button">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="navbar__menu" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </a>
+
         <nav class="header__navbar">
-            <a class="header__navbar__item" href="">HOME</a>
-            <a class="header__navbar__item" href="#">SERVICES</a>
-            <a class="header__navbar__item" href="">PRODUCT: DI-AGNOSTICS</a>
-            <a class="header__navbar__item" href="">PRODUCT: CBF</a>
-            <a class="header__navbar__item" href="">ABOUT US</a>
-            <a class="header__navbar__item" href="">CONTACTS</a>
+            <a class="header__navbar__item" href="#">HOME</a>
+            <a class="header__navbar__item" href="#services">SERVICES</a>
+            <a class="header__navbar__item" href="#product-di-agnostics">PRODUCT: DI-AGNOSTICS</a>
+            <a class="header__navbar__item" href="#product-cbf">PRODUCT: CBF</a>
+            <a class="header__navbar__item" href="#about-us">ABOUT US</a>
+            <a class="header__navbar__item" href="#contacts">CONTACTS</a>
         </nav>
-        <!-- <ul class="header__navbar">
-            <li><a href="">HOME</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">PRODUCT: DI-AGNOSTICS</a></li>
-            <li><a href="">PRODUCT: CBF</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">CONTACTS</a></li>
-        </ul> -->
     </header>
 
     <div class="hero">
         <div class="hero__logo_title_container">
-            <img src="./assets/images/se_logo.png" alt="logo" />
+            <img class="hero__logo_title_container__image" src="./assets/images/se_logo.png" alt="logo" />
 
             <div class="hero__logo_title_container__title">
                 <h1>
@@ -56,43 +56,191 @@
         </div>
     </div>
 
-
-
-
-    <div class="relative">
-        <div class="services__background"></div>
-        <img src="./assets/images/ai_background.png" alt="Services" class="slider__image services__image"/>
+    <div id="services" class="card services">
+        <!-- <div class="services__relative">
+            <div class="services__relative__background"></div>
+            <img src="./assets/images/ai_background.png" alt="Services" class="services__relative__image"/>
+        </div> -->
+        <div class="services__content">
+            <p>Did you know that:</p>
+            <br/>
+            <p>
+              A variety of companies, ranging from dynamic small and medium to Fortune 500, across oil and gas, drilling, engineering, manufacturing industries and commercial solutions, use S E's software development outsourcing services
+            </p>
+            <br/>
+            <br/>
+            <h2 class="services__content__title services__content__title--first">SERVICES</h2>
+            <h3 class="services__content__title">______________________________</h3>
+            <br/>
+            <ul>
+              <li>
+                  Data Science and Machine Learning. Data science includes machine learning techniques and statistical analysis for effective handling of diverse Big Data projects;
+              </li>
+              <li>
+                  Custom Software Development. Custom software development is the creation of solutions aimed at solving a specific business’ needs;
+              </li>
+              <li>
+                  Dedicated Development Teams. When you work with a dedicated project team, you’ll be eligible for an agreed monthly cost, which is cheaper than when you employ local staff, and there’s no overhead charge;
+              </li>
+              <li>
+                  Cloud Solutions. Finding the right solutions to help you solve your toughest business challenges and explore new opportunities with major cloud providers;
+              </li>
+              <li>
+                  Business Applications. We are providing excellent business software application development services that tally with your business.
+              </li>
+            </ul>
+        </div>
     </div>
-    <div class="services__absolute services__content">
-        <p>Did you know that:</p>
-        <br/>
-        <p>
-          A variety of companies, ranging from dynamic small and medium to Fortune 500, across oil and gas, drilling, engineering, manufacturing industries and commercial solutions, use S E's software development outsourcing services
-        </p>
-        <br/>
-        <br/>
-        <h1 class="slider__title">SERVICES</h1>
-        <h3 class="slider__title">______________________________</h3>
-        <br/>
-        <ul>
-          <li>
-              Data Science and Machine Learning. Data science includes machine learning techniques and statistical analysis for effective handling of diverse Big Data projects;
-          </li>
-          <li>
-              Custom Software Development. Custom software development is the creation of solutions aimed at solving a specific business’ needs;
-          </li>
-          <li>
-              Dedicated Development Teams. When you work with a dedicated project team, you’ll be eligible for an agreed monthly cost, which is cheaper than when you employ local staff, and there’s no overhead charge;
-          </li>
-          <li>
-              Cloud Solutions. Finding the right solutions to help you solve your toughest business challenges and explore new opportunities with major cloud providers;
-          </li>
-          <li>
-              Business Applications. We are providing excellent business software application development services that tally with your business.
-          </li>
-        </ul>
+
+    <!-- <div id="product-di-agnostics" class="card product product__container"> -->
+    <div id="product-di-agnostics" class="product card">
+        <!-- <div class="product__container product__flex__container"> -->
+        <div class="product__container">
+            <!-- <img src="./assets/images/phone_di_agnostics.png" alt="mobile app" class="product__container__image slider__image"/> -->
+            <img src="./assets/images/phone_di_agnostics.png" alt="mobile app" class="product__container__image"/>
+            <!-- <div class="services__content product__container__content product__content"> -->
+            <div class="product__container__content">
+                <!-- <h1 class="product__container__content__title slider__title">PRODUCT: DI-AGNOSTICS</h1>
+                <h3 class="product__container__content__title slider__title">______________________________</h3> -->
+                <h1 class="product__container__content__title">PRODUCT: DI-AGNOSTICS</h1>
+                <h3 class="product__container__content__title">______________________________</h3>
+                <br/>
+                <!-- <h5 class="product__container__content__subtitle slider__subtitle">Industrial AI sound analytics SaaS</h5> -->
+                <h5 class="product__container__content__subtitle">Industrial AI sound analytics SaaS</h5>
+                <!-- <ul class="product__container__content__list product_list"> -->
+                <ul class="product__container__content__list">
+                    <li>
+                        <span class="icon-uniE909"></span>
+                        <p>
+                            Record the sound of how the equipment works and transmit data via the special mobile application.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="icon-uniE907"></span>
+                        <p>
+                            Process it in the cloud infrastructure for data computing, analytics, and data science.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="icon-uniE906"></span>
+                        <p>
+                            Use a large dataset of the different sounds of industrial equipment. It was built a comprehensive data pipeline to easily train, schedule retrain, and use specific models for selected users.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="icon-uniE908"></span>
+                        <p>
+                            Receive motor status in seconds and analyze spectrogram via UI for administrators and data analysts.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <!-- <div id="product-cbf" class="cbf cbf__flex__container card"> -->
+    <div id="product-cbf" class="cbf card">
+        <!-- <img src="./assets/images/ai_background_left_top.png" alt="Services" class="slider__image services__image"/> -->
+        <img src="./assets/images/ai_background_left_top.png" alt="Services" class="cbf__image slider__image"/>
+        <!-- <div class="cbf__container cbf__background"> -->
+        <div class="cbf__container">
+          <!-- <h2 class="cbf__container__title slider__title">PRODUCT: CBF</h2> -->
+          <h2 class="cbf__container__title">PRODUCT: CBF</h2>
+          <h3 class="cbf__container__title">______________________________</h3>
+          <br/>
+
+          <!-- <div class="cbf__container__flex cbf__content__flex__container"> -->
+            <div class="cbf__container__flex">
+                <!-- <ul class="cbf__container__flex__list cbf_product_list"> -->
+                <ul class="cbf__container__flex__list">
+                    <li>
+                        <!-- <span class="cbf__container__flex__list__items cbf__items"><pre>01 </pre></span> -->
+                        <span class="cbf__container__flex__list__items"><pre>01 </pre></span>
+                        <p>
+                            Cloud Business Framework is a software framework to develop highly scalable and flexible Enterprise and SaaS applications. It provides rich set of features necessary for implementation of Enterprise and SaaS solutions of any complexity.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="cbf__container__flex__list__items">02</span>
+                        <p>
+                            CBF was created to help developers in building enterprise-ready applications for the end customers faster and better.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="cbf__container__flex__list__items">03</span>
+                        <p>
+                            Using CBF libraries as the base of Enterprise and SaaS application development, the company can save up to 6000 man-hours of work. CBF provides possibility to immediately focus on the project-specific business logic implementation via utilizing pre-built out-of-the-box core features.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="cbf__container__flex__list__items">04</span>
+                        <p>
+                            Implementations. Industries: Oil & Gas, Financial Services, Insurance, Healthcare, Automotive.
+                        </p>
+                    </li>
+                </ul>
+                <div>
+                    <img src="./assets/images/datadome_screens.png" alt="datadome_screens" class="datadome_screens slider__image"/>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/ai_background_right_bottom.png" alt="Services" class="ai_background_right_bottom slider__image services__image"/>
+    </div>
+
+    <!-- <div id="about-us" class="aboutus about__us__container card"> -->
+    <div id="about-us" class="aboutus card">
+        <!-- <div class="aboutus__container product__container product__flex__container"> -->
+        <div class="aboutus__container">
+            <!-- <div class="aboutus__container__content product__container__content services__content product__content"> -->
+            <!-- <div class="aboutus__container__content product__container__content"> -->
+            <div class="aboutus__container__content">
+                <!-- <h2 class="aboutus__container__content__title cbf__container__title slider__title">ABOUT US</h2> -->
+                <h2 class="aboutus__container__content__title">ABOUT US</h2>
+                <h3 class="aboutus__container__content__title">______________________________</h3>
+                <br/>
+                <!-- <div class="aboutus__container__content__subtitle aboutus__content"> -->
+                <div class="aboutus__container__content__subtitle">
+                    <p>
+                        Smartificial Element is a custom software development company that has been providing reliable services for implementation of SaaS systems, sophisticated business solutions, engineering applications, and business processes automation software.
+                    </p>
+                    <p>
+                        With clients from the U.S. and the E.U., offices in London, Houston, and development centers in Eastern Europe, Smartificial Elements assists customers in delivering innovative software solutions on a global scale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts" class="contacts">
+        <div class="contacts__title">
+            © 2022 — 2023 Smartificial Element
+        </div>
+        <div class="contacts__address">
+            <ul class="contacts__address__list">
+                <li class="contacts__address__list__item">SMARTIFICIAL ELEMENT LTD</li>
+                <li class="contacts__address__list__item">SUITE A, 6 HONDURAS STREET</li>
+                <li class="contacts__address__list__item">LONDON</li>
+                <li class="contacts__address__list__item">EC1Y 0TH</li>
+                <li class="contacts__address__list__item contacts__address__list__item--highlight">+44 777 440 9981</li>
+            </ul>
+        </div>
+        <div class="contacts__social">
+            <ul class="contacts__social__list">
+                <li class="contacts__social__list__item">
+                    <a class="contacts__social__list__item__link" href="http://www.facebook.com/agnosticscom" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-uniE904"></span>
+                        <p>Facebook</p>
+                    </a>
+                </li>
+                <li class="contacts__social__list__item">
+                    <a class="contacts__social__list__item__link" href="http://www.linkedin.com/company/agnostics" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-uniE905"></span>
+                        <p>LinkedIn</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <script src="./scripts/scripts.js"></script>
 </body>
