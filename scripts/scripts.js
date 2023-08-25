@@ -1,4 +1,4 @@
-//==================== SECTION FLASHING EFFECT CHAPTER =======================================
+//==================== SECTION FLASHING EFFECT CHAPTER ================================
 
 const cards = document.querySelectorAll(".card")
 
@@ -26,12 +26,35 @@ const navbarLinks = document.getElementsByClassName('header__navbar')[0]
 const crossBtn = document.getElementsByClassName('header__cross_button')[0]
 const burgerBars = document.querySelectorAll('.header__toggle_button__bar')
 
-toggleButton.addEventListener('click', () => {
+const header = document.getElementsByClassName('header')[0]
+
+let showMenu = false;
+
+toggleButton.addEventListener('click', toggleMenu)
+
+function toggleMenu() {
+
     navbarLinks.classList.toggle('active')
     crossBtn.classList.toggle('header__cross_button--active')
 
     for (let elem of burgerBars) {
         elem.classList.toggle('header__toggle_button__bar--unactive')
     }
-})
 
+    showMenu = !showMenu
+    // console.log('showMenu is ', showMenu)
+}
+
+document.addEventListener('click', function handleClickOutsideBox(event) {
+    if (showMenu) {
+        if (!header.contains(event.target)) {
+            navbarLinks.classList.toggle('active')
+            crossBtn.classList.toggle('header__cross_button--active')
+
+            for (let elem of burgerBars) {
+                elem.classList.toggle('header__toggle_button__bar--unactive')
+            }
+            showMenu = false
+        }
+    }
+});
